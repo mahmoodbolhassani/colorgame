@@ -1,0 +1,58 @@
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/Sahel.ttf");
+}
+.main {
+  height: 100vh;
+  font-family: sahel;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.box {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item {
+  margin: 1px;
+  border-radius: 8px;
+  background-color: rgb(147, 240, 128);
+}
+
+.popup {
+  width: 400px;
+  height: 0;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.popup > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.popup > div > div {
+  width: 180px;
+  height: 180px;
+  background-image: url(../images/upset.jpg);
+  background-size: cover;
+}
+.btn {
+  color: blanchedalmond;
+  background-color: rgb(4, 65, 4);
+}
